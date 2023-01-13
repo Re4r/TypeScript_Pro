@@ -23,3 +23,5 @@ console.log(greet3('John'));
 let greet4 = (name: string) => 'hello ' + name;
 
 console.log(greet4('Sarah'));
+
+ 
