@@ -1,4 +1,4 @@
-/*function log(message: string, userId?: string) {
+function log(message: string, userId?: string) {
     let time = new Date().toLocaleTimeString();
     console.log(time, message, userId || 'Not signed in');
 };
@@ -19,13 +19,13 @@ type Context = {
     userId?: string
 };
 
-function log3(message: string, context: Context = {}) {
+/*function log3(message: string, context: Context = {}) {
     let time = new Date().toLocaleDateString();
     console.log(time, message, context.userId);
-};
+};*/
 
-console.log(log3('User clicked on a button', 'da76dd3be' ));
-console.log(log3('User signed out', 'da763be'));
+//console.log(log3('User clicked on a button', 'da76dd3be' ));
+//console.log(log3('User signed out', 'da763be'));
 
 function sum(numbers: number[]): number {
     return numbers.reduce((total, n) => total + n, 0);
@@ -37,7 +37,7 @@ function sumVariadicSafe(...numbers: number[]): number {
     return numbers.reduce((total, n) => total + n, 0);
 };
 
-console.log(sumVariadicSafe(1, 2, 3, 4));*/
+console.log(sumVariadicSafe(1, 2, 3, 4));
 
 
 
