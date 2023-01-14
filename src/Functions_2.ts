@@ -35,5 +35,21 @@ let log: Log = (
         console.log(time, message, userId);
     }
 
-    console.log(log('hello', 'user444'));
+//console.log(log('hello', 'user444'));
+
+type Context = (message: string, appId?: string, userId?: string) => void;
+
+let log3: Context = (message, userId, appId) => {
+    let time = new Date().toLocaleDateString();
+    console.log(time, message, userId, appId);
+}; 
+  
+//console.log(log3('welcome', 'da76dd3be', '333111' ));
+//console.log(log3('User signed out', 'da763be', '5757575'));
+
+
+
+
+
+
 

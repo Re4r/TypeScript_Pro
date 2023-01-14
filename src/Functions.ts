@@ -14,10 +14,10 @@ function log2(message: string, userId = 'Not signed in') {
 console.log(log2('User clicked on a button', 'da763be'));
 console.log(log2('User signed out'));
 
-type Context = {
+/*type Context = {
     appId?: string,
     userId?: string
-};
+};*/
 
 /*function log3(message: string, context: Context = {}) {
     let time = new Date().toLocaleDateString();
