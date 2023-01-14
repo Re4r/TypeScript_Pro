@@ -6,4 +6,16 @@ let numbers2 = {
     }
 };
 
-console.log(numbers2);
+//console.log(numbers2);
+
+function area(radius: number): number | null {
+    if (radius < 0) return null;
+    return Math.PI * Math.pow(radius, 2);
+};
+
+let r: number = 3;
+let aa = area(r);
+if (aa !== null) console.info('result:', aa);
+
+
+
