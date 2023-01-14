@@ -1,4 +1,3 @@
-import { Console } from "console";
 import { type } from "os";
 
 type Reserve = {
@@ -17,4 +16,6 @@ let reserve: Reserve = (
         console.log('Book a round trip');
     }
 }
+
+
 
