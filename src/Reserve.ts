@@ -16,6 +16,3 @@ let reserve: Reserve = (
         console.log('Book a round trip');
     }
 }
-
-
-
