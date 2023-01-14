@@ -1,8 +1,9 @@
+import { Console } from "console";
 import { type } from "os";
 
 type Reserve = {
-    (from: Date, to: Date, destination: string): Reservation
-    (from: Date, destination: string): Reservation
+    (from: Date, to: Date, destination: string): void
+    (from: Date, destination: string): void
 }
 
 let reserve: Reserve = (
@@ -10,5 +11,10 @@ let reserve: Reserve = (
     toOrDestination: Date | string,
     destination?: string
 ) => {
-    
+    if (toOrDestination instanceof Date && destination !== undefined) {
+        console.log('Book a one-way trip');
+    } else if (typeof toOrDestination === 'string') {
+        console.log('Book a round trip');
+    }
 }
+
