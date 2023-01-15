@@ -6,3 +6,4 @@ function map<A, B>(array: A[], f: (item: A) => B): B[] {
     return result;
 }
 
+console.log(map(['a', 'b', 'c'], _ => _ === 'a'));
