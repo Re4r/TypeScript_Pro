@@ -20,5 +20,9 @@ let filter: Filter = (array, f) => {
     return result;
 };
 
+console.log(filter([1, 2, 3, 4], _ => _ > 2));
+console.log(filter(['a', 'b'], _ => _ !== 'b'));
+console.log(filter(names, _ => _.firstName.startsWith('B')));
+
 
 
