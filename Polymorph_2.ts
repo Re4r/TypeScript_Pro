@@ -6,4 +6,4 @@ function fill(length: number, value: string): string[] {
     return Array.from({length}, () => value);
 };
 
-call(fill, 10, 'a');
+console.log(call(fill, 10, 'a'));
