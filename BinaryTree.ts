@@ -15,3 +15,7 @@ function mapNode<T extends TreeNode>(node: T, f: (value: string) => string): T {
     return {...node, value: f(node.value)};
 };
 
+let a1 = mapNode(a, _ => _.toUpperCase());
+let b1 = mapNode(b, _ => _.toUpperCase());
+let c1 = mapNode(c, _ => _.toUpperCase());
+
