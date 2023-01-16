@@ -1,8 +1,22 @@
 import { type } from "os";
 
 class Game {};
-class Piece {};
-class Position {};
+
+class Piece {
+    protected position: Position;
+    constructor(
+        private readonly color: Color,
+        file: File,
+        rank: Rank
+    ) {this.position = new Position(file, rank)};
+};
+
+class Position {
+    constructor(
+        private file: File,
+        private rank: Rank
+    ) {}
+};
 
 class King extends Piece {};
 class Queen extends Piece {};
