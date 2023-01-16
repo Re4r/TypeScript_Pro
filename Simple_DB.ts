@@ -27,6 +27,13 @@ interface StringDatabase {
     set(key: string, value: string): void 
 }
 
+interface StringDatabaseConstructor {
+    new(): StringDatabase
+    from(state: State): StringDatabase
+}
+
+
+
 
 
 
