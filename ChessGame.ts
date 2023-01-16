@@ -26,7 +26,13 @@ class Position {
     };
 };
 
-class King extends Piece {};
+class King extends Piece {
+    canMoveTo(position: Position) {
+        let distance = this.position.distanceFrom(position);
+        return distance.rank < 2 && distance.file < 2;
+    };
+};
+
 class Queen extends Piece {};
 class Bishop extends Piece {};
 class Knight extends Piece {};
