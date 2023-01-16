@@ -29,3 +29,10 @@ class HardToDebugUser {
     }
 }
 
+let User1 = withEZDebug(HardToDebugUser)
+let user = new User1(3, 'Emma', 'Gluzman')
+
+console.log(user.debug())
+
+
+
