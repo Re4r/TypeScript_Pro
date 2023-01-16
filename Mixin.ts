@@ -2,9 +2,9 @@ import { type } from "os";
 
 class User {}
 
-type ClassConstructor = new(...args: any[]) => {}
+type ClassConstructor<T> = new(...args: any[]) => T
 
-function withEZDebug<C extends ClassConstructor>(Class: C) {
+function withEZDebug<C extends ClassConstructor<{getDebugValue(): object}>>(Class: C) {
     return class extends Class {
         debug() {
             let Name = Class.constructor.name
