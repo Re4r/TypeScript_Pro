@@ -11,3 +11,7 @@ let a: TreeNode = {value: 'a'};
 let b: LeafNode = {value: 'b', isLeaf: true};
 let c: InnerNode = {value: 'c', children: [b]};
 
+function mapNode<T extends TreeNode>(node: T, f: (value: string) => string): T {
+    return {...node, value: f(node.value)};
+};
+
