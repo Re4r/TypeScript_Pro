@@ -12,3 +12,4 @@ type Sushi = Food & {
 type Cake = Food & {
     sweet: boolean
 }
+
